@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit vs Vegetable</title>
+
+    <style>
+        body {
+            background-color: #e8b2eb;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgba(8, 0, 12, 0.93)
+        }
+
+        button {
+            background-color: #010b0e;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>FRUIT🍎 VS VEGETABLE🥦</h1>
+<h2>UPLOAD IMAGE</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image"><br><br>
+    <button type="submit">Predict</button>
+</form>
+
+{% if result %}
+    <h2>Result: {{ result }}</h2>
+{% endif %}
+
+{% if image %}
+    <img src="{{ image }}" width="200">
+{% endif %}
+
+</body>
+</html>
