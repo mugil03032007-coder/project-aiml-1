@@ -31,3 +31,6 @@ A Flask web application is included to upload and classify images in real-time.
 - NumPy  
 - OpenCV  
 - Pillow  
+## 📷 Project Output
+
+![Output](Screenshot%20(57).png)
